@@ -3,7 +3,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
 //------------------------------------Cocktail DB----------------------------------------
-const baseUrl = `http://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=margarita`;
+const baseUrl = `https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=margarita`;
 const baseUrl1 = `https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=margarita`;
 //-----------------------First API call----------------------
 // function fetchDrink() {
@@ -102,7 +102,7 @@ let searchURL = async function () {
     document.querySelector(".instructions").innerText = "";
     document.querySelector(".inputDrink").value = "";
   const res1 = await fetch(
-    `http://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=${input}`
+    `https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=${input}`
   );
   const data1 = await res1.json();
   return displayDrink(data1);
