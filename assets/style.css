@@ -147,3 +147,16 @@ ul{
     font-size: 24px;
     width: 100%;
 }
+.btn-primary{
+    background-color: rgb(20, 32, 56);
+}
+.modal-title{
+    color: black;
+    font-family: 'Patrick Hand SC';
+    font-size: 24px;
+}
+#myInput{
+    color: black;
+    /* font-family: 'Patrick Hand SC'; */
+    font-size: 20px;
+}

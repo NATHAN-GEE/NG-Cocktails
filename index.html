@@ -23,10 +23,10 @@
            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                <ul class="navbar-nav">
                    <li class="nav-item">
-                       <a class="nav-link active" aria-current="page" href="#">Home</a>
+                       <a class="nav-link active" aria-current="page" href="#footer">Home</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="#footer">About</a>
+                       <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#myModal">About</a>
                </ul>
            </div>
        </div>
@@ -74,7 +74,28 @@
             </div>
             <div class="col-md-6 col-12 footer-link"> 
                 <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item flex-fill footer-list"id='footer'>About</li>
+                
+                    <li class="list-group-item flex-fill footer-list" id='footer'><a href="" data-bs-toggle="modal" data-bs-target="#myModal">About</a></li>                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">About me</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p id="myInput">My name is Nathan Gee and I created this site to make it easy to look up drinks. This is my one of my first
+                                        API integration projects. At this point in time, I have been doing software dev for 1 month. I am looking
+                                        forward to more projects. Hopefully you can enjoy the road of progress with me.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <li class="list-group-item flex-fill footer-list"><a href="#navtop">Top</a></li>
                 </ul>
             </div>
